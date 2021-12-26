@@ -1,7 +1,7 @@
 package ru.netology.manager;
 
 public class Radio {
-    private int  station =0;
+    private int station = 0;
     private int volume = 3;
 
     /* Установка параметров */
