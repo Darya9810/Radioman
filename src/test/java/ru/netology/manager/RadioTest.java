@@ -8,7 +8,7 @@ class RadioTest {
     Radio radio = new Radio();
 
     @Test
-    void shouldSwitchStationUpToRound() {
+    void shouldSwitchTheStationUpAndDown() {
         radio.switchStationUp(); // 0~1
         radio.switchStationUp(); // 1~2
         radio.switchStationUp(); // 2~3
@@ -18,6 +18,9 @@ class RadioTest {
         radio.switchStationUp(); // 6~7
         radio.switchStationUp(); // 7~8
         radio.switchStationUp(); // 8~9
+        assertEquals(9, radio.getStation());
+    }
+    void shouldSwitchStationRoundToUp() {
         radio.switchStationUp(); // 9~0
         assertEquals(0, radio.getStation());
     }
