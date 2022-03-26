@@ -20,10 +20,6 @@ class RadioTest {
         radio.switchStationUp(); // 8~9
         assertEquals(9, radio.getStation());
     }
-    void shouldSwitchStationRoundToUp() {
-        radio.switchStationUp(); // 9~0
-        assertEquals(0, radio.getStation());
-    }
 
     @Test
     void shouldSwitchStationDownToRound() {
